@@ -1,8 +1,7 @@
 Pasos necesarios para arrancar el proyecto mediante los virtual enviroments:
 1. Se puede usar el entorno ya creado "venv" o crear un nuevo virtual enviroment y descargar django con pip install django
 2. Abre un terminal con el virtual environment 
-3. En el terminal instroduce: cd mysite
-4. En el terminal instroduce: python manage.py runserver
+3. En el terminal instroduce: python manage.py runserver
 
 
 Url de arranque del proyecto: http://127.0.0.1:8000/
