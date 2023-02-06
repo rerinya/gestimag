@@ -1,7 +1,7 @@
 Pasos necesarios para arrancar el proyecto mediante los virtual enviroments:
 1. Abre un terminal con el virtual environment creado o crear uno con 
 	- pip install virtualenv
-	- virtualenv venv
+	- virtualenv venv o también se puede usar com python -m venv venv
 	- .\venv\Scripts\activate
 2. Instala las dependencias con pip install -r requirements.txt
 3. En el terminal instroduce: python manage.py runserver
