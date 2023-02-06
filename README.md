@@ -1,6 +1,9 @@
 Pasos necesarios para arrancar el proyecto mediante los virtual enviroments:
-1. Se puede usar el entorno ya creado "venv" o crear un nuevo virtual enviroment y descargar django con pip install django
-2. Abre un terminal con el virtual environment 
+1. Abre un terminal con el virtual environment creado o crear uno con 
+	pip install virtualenv
+	virtualenv venv
+	.\venv\Scripts\activate
+2. Instala las dependencias con pip install -r requirements.txt
 3. En el terminal instroduce: python manage.py runserver
 
 
