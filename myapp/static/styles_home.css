@@ -1,0 +1,113 @@
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  margin: 0 0 50px;
+  background-color: rgba(0, 0, 0, 0.95);
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+}
+
+.series {
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.series a {
+  color: #fff;
+  text-decoration:none; /*Elimina subrayado*/
+}
+
+.series p {
+  padding-top: 15px;
+}
+
+.series img {
+  width: 100%;
+  margin-top: 15px;
+  box-shadow: -10px 10px 5px 0 #000;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.series img:hover{
+  transform: translateY(-10px);
+}
+
+.item img {
+  border-radius: 12px;
+}
+
+.btn-add{
+  border-radius: 100px;
+  padding: 7px 20px;
+  float: right;
+  color: #fff;
+  background: #009edb;
+  font-weight: 600;
+}
+
+h1 {
+  margin-top: 0px;
+}
+
+
+/*add_images*/
+#form {
+  width: 60%;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.btn-create{
+  border-radius: 100px;
+  padding: 7px 20px;
+  color: #fff;
+  background: #009edb;
+  font-weight: 600;
+}
+
+.subirimag {
+  color: #e7e7e7;
+}
+
+.subirimag .col-form-label{
+  width: 100%;
+}
+
+.btn-back-img{
+  border-radius: 100px;
+  padding: 7px 20px;
+  color: #fff;
+  background: #009edb;
+  font-weight: 600;
+  margin: 20px;
+}
+
+
+/*images_detail*/
+.detail {
+  color: #fff;
+  margin: 30px 0;
+  padding: 20px;
+}
+
+.m-img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.btn-back{
+  border-radius: 100px;
+  padding: 7px 20px;
+  color: #fff;
+  background: #009edb;
+  font-weight: 600;
+  margin-top: 30px;
+}

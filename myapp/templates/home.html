@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Images</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="{% static 'styles_home.css' %}" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container series">
+    <div class="row">
+        <div class="col-md-6">
+            <h1>My images</h1>
+        </div>
+        <div class="col-md-6">
+            <a href={% url 'add_images' %} class="btn btn-add"> Add images</a>
+        </div>
+    </div>
+
+
+    <section class="row">
+    {% for images in images_list %}
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+            {% for imag in images %}
+            <a href="{% url 'image' imag.id %}">
+                <img src="{{ imag.url }}">
+                <p>{{ imag.name }}</p>
+            </a>
+            {% endfor %}
+        </div>
+    {% endfor %}
+    </section>
+
+</div>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="scripts/script.js"></script>
+
+</html>

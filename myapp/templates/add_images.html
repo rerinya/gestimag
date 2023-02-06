@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Images</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="{% static 'styles_home.css' %}" rel="stylesheet">
+</head>
+
+<body>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-4">
+            <div class="subirimag">
+                <div class="row">
+                    <div class="col-md-6" >
+                    <h2>Add images</h2>
+                    </div>
+                    <div class="col-md-6" >
+                    <a href="{% url 'home' %}" class="btn btn-back-img"> Back</a>
+                    </div>
+                </div>
+                <form class="col-4" id="form" action="{% url 'add_images' %}" method="post">
+            
+                    <div class="form-group">
+                        <label class="col-form-label">Name of the image:
+                            <input type="text" class="form-control " placeholder="name" name="name" required></label>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">URL of the image:
+                            <input type="text" class="form-control " placeholder="url" name="url" required></label>
+                    </div>
+                    <div class="text-left">
+                        <input type="submit" name="add_images" value="Add" class="btn btn-create">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="scripts/script.js"></script>
+
+</html>
